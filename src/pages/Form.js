@@ -55,7 +55,7 @@ function Form() {
   }
 
   return (
-    <div>
+    <div className=" dark:bg-slate-900">
       <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8">
         <h2 className="text-2xl font-bold mb-4  dark:text-white">Datos de facturación</h2>
         <div className="mb-4">
@@ -190,7 +190,7 @@ function Form() {
       </form>
       {showMessage && (
         <div className=" dark:text-white">
-          <div className="text-center  dark:text-white">
+          <div className="text-center">
             <div>
               Pedido a nombre de: {formData.nombre}
             </div>

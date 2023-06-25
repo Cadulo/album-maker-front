@@ -101,7 +101,7 @@ function Form() {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="codigoPostal" className="block mb-2">
+          <label htmlFor="codigoPostal" className="block mb-2  dark:text-white">
             Código Postal:
           </label>
           <input
@@ -144,7 +144,7 @@ function Form() {
             />
           </div>
           <div className="mr-4">
-            <label htmlFor="ciudadEnvio" className="block mb-2  dark:text-white">
+            <label htmlFor="ciudadEnvio" className="block mb-2 dark:text-white">
               Ciudad:
             </label>
             <input
@@ -158,7 +158,7 @@ function Form() {
             />
           </div>
           <div>
-            <label htmlFor="codigoPostalEnvio" className="block mb-2  dark:text-white">
+            <label htmlFor="codigoPostalEnvio" className="block mb-2 dark:text-white">
               Código Postal:
             </label>
             <input

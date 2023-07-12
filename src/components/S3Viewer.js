@@ -4,10 +4,10 @@ import CardImageS3 from './CardImageS3';
 import { PageContext } from '../App';
 
 AWS.config.update({
-  accessKeyId: 'ASIATLQQJSZSBOSIGYMR',
-  secretAccessKey: 'wfGEo35KBmcd7rTCOsyCNNkmwq7F/UJ1gESiHf/t',
+  accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
   region: 'us-east-1',
-  sessionToken: 'FwoGZXIvYXdzEB4aDFxHqYqkybj1vXWDqCK+AZxq2Vx+8ihhft+gOtexBkTujU7rqxnUVzoj8FV48pJRpyxl9cM8eGrfSPNFH5t+RviRf88E4JX+qAnHZhgY92o64wTJGLACirYuEM4+t2M8l8rk+ji1IQ+D9VR6zbw6vygmQmH+bNv/XrJkYuX6NXCMsMjOZyQhymOZ8UYIFD1PpDsZ+cYRFFVzhUIsQm6kcsguzPgbNhKhuiVAzoyDrSkIe1/3YsysGofO8mo8S2z291XoECP6jxpSpQ1Wr8kogKS4pAYyLZk9WjHz5zyWUdpcafVPAI10wVReYp38rD/26Ys7Z2g74kxi8212wppi8KpJzg=='
+  sessionToken:process.env.REACT_APP_AWS_SESSION_TOKEN
 });
 
 export const S3Viewer = ({ showImages, showMessage }) => {
